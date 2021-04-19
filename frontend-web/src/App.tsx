@@ -1,12 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
+import Routers from './Router';
 import './App.css';
 
 function App() {
   return (
-    <div>
-      <h1>Ola mundo!</h1>
-    </div>
+    <Routers />
   );
 }
 
