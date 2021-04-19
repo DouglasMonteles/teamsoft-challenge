@@ -1,10 +1,12 @@
 import './styles.css'
 
+import ProductCard from '../components/product-card';
+
 function Home() {
 
   return (
-    <div>
-      Home works!
+    <div className="home__container">
+      <ProductCard />
     </div>
   );
 }
