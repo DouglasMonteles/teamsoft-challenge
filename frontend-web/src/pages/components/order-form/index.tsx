@@ -5,8 +5,13 @@ import PlusIcon from '../../../assets/plus.png';
 
 function OrderForm() {
 
+  const add = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    e.preventDefault();
+    alert('adicionado!');
+  }
+
   return (
-    <div className="order__form">
+    <form className="order__form">
       <div className="order__form__warning">
         <h3 className="order--form--margin-0 order__form__warning__title">Adicionar Ingredientes</h3>
         <span className="order__form__warning__quatity order--form--margin-0">Até 8 ingredientes.</span>
@@ -64,6 +69,18 @@ function OrderForm() {
         <h3 className="order--form--margin-0 order__form__warning__title">Precisa de Talher?</h3>
       </div>
 
+      <div className="order__form__radio">
+        <div className="order--form--space-between">
+          <label htmlFor="cutlery-yes">Sim</label>
+          <input type="radio" name="cutlery" id="cutlery-yes" value="0" />
+        </div>
+
+        <div className="order--form--space-between">
+          <label htmlFor="cutlery-no">Não</label>
+          <input type="radio" name="cutlery" id="cutlery-no" value="1" />
+        </div>
+      </div>
+
       <div className="order__form__add">
         <div className="order__form__button order__form__button__cutlery">
           <button className="order__form__button__icon">
@@ -75,9 +92,9 @@ function OrderForm() {
           </button>
         </div>
 
-        <button className="order__form__button__add">Adicionar</button>
+        <button onClick={add} type="submit" className="order__form__button__add">Adicionar</button>
       </div>
-    </div>
+    </form>
   );
 }
 
