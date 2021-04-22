@@ -4,7 +4,7 @@ function ProductCard() {
 
   return (
     <div className="product__card">
-      <img src="http://teamsoft.com.br/test-frontend/picanha_cheddar_bacon.png" alt="product image"/>
+      <img src="http://teamsoft.com.br/test-frontend/picanha_cheddar_bacon.png" alt="product"/>
     
       <h1 className="product__card__title">Oferta Picanha Cheddar Bacon</h1>
 
